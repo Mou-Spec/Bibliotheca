@@ -2,8 +2,6 @@
 
 **Bibliotheca** é uma estante virtual de livros com leitor embutido, desenvolvida com **Java 17+ / Spring Boot** no backend e **frontend web moderno** integrado (HTML, CSS e JavaScript vanilla). A aplicação permite enviar, organizar e ler livros em uma interface de estante realista com animações de página em 3D.
 
-> Sem Docker. O projeto roda com um único comando e fica disponível em `http://localhost:8080`.
-
 ## Visão geral
 
 - **Estante realista**: prateleiras de madeira, lombadas coloridas, hover 3D, busca/filtros e organização visual.
@@ -149,14 +147,3 @@ As principais configurações ficam em `src/main/resources/application.propertie
 - `bibliotheca.storage.path` — diretório de armazenamento dos livros
 - `bibliotheca.upload.max-size-bytes` — tamanho máximo de upload
 - `bibliotheca.upload.allowed-ext` — extensões permitidas
-
-## Notas e limitações
-
-- A experiência de leitura mais completa é para **PDF** e **EPUB** (renderização dedicada no frontend). Outros formatos suportados no upload podem ter visualização limitada conforme o tipo.
-- A extração de metadados/capa no backend é mais completa para **PDF**; para EPUB e outros formatos há fallbacks.
-- Recursos como **TTS** e **Fullscreen** dependem do suporte do navegador.
-- Em JDKs muito recentes (ex.: versões early access), o Maven/JVM pode exibir avisos de compatibilidade; isso não impede o funcionamento da aplicação.
-
-## Licença
-
-Defina aqui a licença do projeto (ex.: MIT, Apache-2.0) conforme sua preferência.
